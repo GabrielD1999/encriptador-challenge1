@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    padding: 10px 0px 0px 40px;
+    width: 3%;
+}
+
+wrap-content{
+    width: 100%;
+    margin: 0px auto;
+}
+
+#left-container{
+    display: inline-block;
+    margin: 40px;
+}
+
+#right-container{
+    float: right;
+    background-color: #FFFFFF;
+    width: 400px;
+    min-height: 552px;
+    /*margin: 40px 40px 40px 1000px;  */
+    margin: 40px;
+    border-radius: 24px;
+}
+
+#text-area{
+    width: 680px;
+    font-size: 32px;
+    display: block;
+    color: #0A3871;
+    border: none;
+    background-color: #F3F5FC;
+}
+::placeholder{color: #0A3871;}
+    #text-area:focus{
+        outline: none;
+    }
+
+#p-minusculas{
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 32px;
+    color: #0A3871;
+}
+
+#btn-encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#btn-desencriptar, #btn-copiar{
+    background-color: #FFFFFF;
+    color: #0A3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-copiar{
+    display: none;
+    margin: 0px auto;
+    margin-bottom: 32px;
+}
+
+#msg{
+    min-height: 421px;
+    margin-bottom: 32px;
+    width: 100%;
+    background-image: url("../img/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    color: #0A3871;
+    font-size: 24px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+footer{
+    padding-top: 10px;
+    width: 100%;
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+footer p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer p img{
+    width: 20px;
+    height: 20px;
+}
+
+footer a{
+    color: #F3F5FC;
+}
+
+#descripcion{
+    color: #0A3871;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1244px){
+    #right-container{
+        width: 30%;
+    }
+
+    #left-container{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    #text-area{
+        width: 95%;
+    }
+
+    #msg{
+        width: 90%;
+    }
+
+    #btn-encriptar, #btn-desencriptar{
+        width: 40%;
+    }
+
+    #btn-copiar{
+        width: 98%;
+    }
+
+}
+
+@media (max-width: 768px){
+    #left-container{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #right-container{
+        float: none;
+        display: block;
+        width: 100%;
+        min-height: auto;
+    }
+
+    #text-area{
+        width: 98%;
+    }
+
+    #msg{
+        background-image: none;
+        min-height: auto;
+    }
+
+    #btn-copiar{
+        width: 98%;
+    }
+}
+
+@media (max-width: 684px){
+    #btn-encriptar, #btn-desencriptar{
+        display: block;
+        width: 98%;
+        margin-bottom: 10px;
+    }
+
+}
